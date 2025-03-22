@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text on Hover</title>
+    <style>
+        .hover-text::after {
+            content: "Hover over me!";
+        }
+
+        .hover-text:hover::after {
+            content: "Text changed!";
+        }
+    </style>
+</head>
+<body>
+    <p class="hover-text"></p>
+</body>
+</html>
